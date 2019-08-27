@@ -64,12 +64,18 @@ textarea:focus{
 }
 
 .form input:focus{
-  border: 1px solid grey;
+  border: 3px solid grey;
 }
 
 ::placeholder{
     text-align: right;
     padding-right: 10px;
+}
+
+.zip{
+    width:200px;
+
+
 }
 /* ==========Layout stlye=============
 ==================================== */
@@ -126,6 +132,7 @@ input[type="text"],
 input[type="email"],
 input[type="number"],
 input[type="city"],
+input[type="tel"],
 textarea,
 select {
   background: rgba(255,255,255,0.1);
@@ -143,6 +150,14 @@ select {
   box-shadow: 0 1px 0 rgba(0,0,0,0.03) inset;
   margin-bottom: 20px;
 }
+input[type="zip"]{
+    width: 50%;
+
+}
+select{
+  width: 100%;
+}
+
 
 input[type="checkbox"],
 input[type="radio"]
@@ -156,7 +171,7 @@ button {
   background-color:#999999;
   text-align: center;
   border-radius: 5px;
-  width: 98%;
+  width: 99%;
   margin-bottom: 5px;
   margin-top: 5px;
 }
@@ -178,11 +193,29 @@ button {
   .float{
     display: flex;
     align-items: center;
+    justify-content: space-between;
   }
 
   .float label{
     white-space: nowrap;
-    display: inline;
+    display: inline-block;
     padding-right: 40px;
+    width:150px;
   }
+
+  .float input{
+    width: 500px;
+    justify-content: space-between;
+  }
+
+  .float select{
+    width: 515px;
+  }
+
+input[type="number"]{
+  width: 300px;
+  margin-right:200px;
+
+}
+
 }
